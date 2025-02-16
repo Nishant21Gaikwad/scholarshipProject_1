@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Login</h1>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Enter random email" required>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <div id="applicationForm" class="hidden">
+      <h2>Apply for Scholarship for Excellence</h2>
+      <form id="scholarshipForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <input type="text" id="college" placeholder="College Name" required>
+        <input type="text" id="rollNo" placeholder="Roll No" required>
+        <input type="text" id="cast" placeholder="Cast" required>
+        <input type="number" id="income" placeholder="Family Income" required>
+        <input type="number" id="ssc" placeholder="SSC Marks" required>
+        <input type="number" id="hsc" placeholder="HSC Marks" required>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+
+    <div id="statusMessage" class="hidden">
+      <h2>Application Status</h2>
+      <p id="statusText"></p>
+    </div>
+  </div>
+  <script src="student.js"></script>
+</body>
+</html>
